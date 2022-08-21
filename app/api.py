@@ -12,9 +12,6 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-@app.get("/")
-def home():
-    return {"message": "Welcome"}
 
 @app.get("/status")
 def status():
